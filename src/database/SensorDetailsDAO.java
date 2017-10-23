@@ -16,7 +16,7 @@ public class SensorDetailsDAO {
 		List<SensorDetailsVO> ls = new ArrayList<SensorDetailsVO>();
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 				Statement st = con.createStatement();
 				ResultSet rs = st.executeQuery("SELECT * from sensordb.sensor_details");
 				while(rs.next()){
@@ -48,7 +48,7 @@ public class SensorDetailsDAO {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 			Statement st = con.createStatement();
 			String sql = "UPDATE sensordb.sensor_details SET sensor_status ='"+action+"' WHERE sensor_id="+index;
 			if(action.equals("Deregister")){

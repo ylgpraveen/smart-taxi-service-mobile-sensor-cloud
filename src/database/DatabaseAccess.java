@@ -19,7 +19,7 @@ public class DatabaseAccess {
 	public void insert(String query){
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 		Statement st = con.createStatement();
 		st.executeUpdate(query);
 		
@@ -34,7 +34,7 @@ public class DatabaseAccess {
 		Auth a = new Auth();
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(query);
 		

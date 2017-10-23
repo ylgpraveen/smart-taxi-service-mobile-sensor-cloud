@@ -104,12 +104,12 @@
                         </li> -->
                         
                         <li>
-                            <a class="active" href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Billing and Trip Details</a>
+                            <a class="active" href="DriverSafetyScore.jsp"><i class="fa fa-bar-chart-o fa-fw"></i>Driver Safety Score</a>
                         </li>
                         
-                         <li>
-                            <a  href="Logout"><i class="fa fa-table fa-fw"></i> Logout</a>
-                        </li>
+<!--                          <li> -->
+<!--                             <a  href="Logout"><i class="fa fa-table fa-fw"></i> Logout</a> -->
+<!--                         </li> -->
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -120,7 +120,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Billing</h1>
+                    <h1 class="page-header">Billing and Trip History of End User</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

@@ -23,7 +23,7 @@ public class BillingDAO {
 		List<BillingVO> ls = new ArrayList<BillingVO>();
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 				Statement st = con.createStatement();
 				ResultSet rs = st.executeQuery("SELECT * from sensordb.sensor_details");
 				while(rs.next()){

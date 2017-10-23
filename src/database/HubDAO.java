@@ -14,7 +14,7 @@ public class HubDAO {
 		List<HDVO> ls = new ArrayList<HDVO>();
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 				Statement st = con.createStatement();
 				ResultSet rs = st.executeQuery("SELECT * from sensordb.sensor_master where hub_id="+hub_id+"");
 				while(rs.next()){

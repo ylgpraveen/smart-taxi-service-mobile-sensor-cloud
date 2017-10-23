@@ -14,7 +14,7 @@ public class UserDAO{
 		List<UDVO> ls = new ArrayList<UDVO>();
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 				Statement st = con.createStatement();
 				ResultSet rs = st.executeQuery("SELECT s.sensor_id,t.temp,sensor_tag_value,s.sensor_status,t.time_stamp FROM sensordb.temp_data t join sensordb.sensor_master s on (s.sensor_id=t.sensor_id) where t.user_id="+i+" group by t.sensor_id");
 				while(rs.next()){

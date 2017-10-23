@@ -14,7 +14,7 @@ public class AdminDAO {
 		List<ADVO> ls = new ArrayList<ADVO>();
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","root");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sensordb?useSSL=false", "root","password");
 				Statement st = con.createStatement();
 				ResultSet rs = st.executeQuery("SELECT * from sensordb.hub_master");
 				while(rs.next()){

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  
+    <welcome-file-list>
+    <welcome-file>/login_new.jsp</welcome-file>
+</welcome-file-list>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>login.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  
+
+  
+  <servlet>
+    <description></description>
+    <display-name>SignUp</display-name>
+    <servlet-name>SignUp</servlet-name>
+    <servlet-class>login.SignUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>CreateSensor</display-name>
+  	<servlet-name>CreateSensor</servlet-name>
+  	<servlet-class>Servlet.CreateSensor</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>CreateSensor</servlet-name>
+  	<url-pattern>
+  	/CreateSensor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Enduser</display-name>
+  	<servlet-name>Enduser</servlet-name>
+  	<servlet-class>Servlet.Enduser</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>Enduser</servlet-name>
+  	<url-pattern>
+  	/Enduser</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Charts</display-name>
+  	<servlet-name>Charts</servlet-name>
+  	<servlet-class>Servlet.Charts</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>Charts</servlet-name>
+  	<url-pattern>
+  	/Charts</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SensorMap</display-name>
+  	<servlet-name>SensorMap</servlet-name>
+  	<servlet-class>Servlet.SensorMap</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>SensorMap</servlet-name>
+  	<url-pattern>
+  	/SensorMap</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SensorUtilization</display-name>
+  	<servlet-name>SensorUtilization</servlet-name>
+  	<servlet-class>Servlet.SensorUtilization</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SensorUtilization</servlet-name>
+  	<url-pattern>
+  	/SensorUtilization</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Userdata</display-name>
+  	<servlet-name>Userdata</servlet-name>
+  	<servlet-class>Servlet.Userdata</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+		<servlet-name>Userdata</servlet-name>
+		<url-pattern>
+		/Userdata</url-pattern>
+	  </servlet-mapping>
+	  
+    <servlet>
+  	<description>
+  	</description>
+  	<display-name>ViewSensor</display-name>
+  	<servlet-name>ViewSensor</servlet-name>
+  	<servlet-class>Servlet.ViewSensor</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+		<servlet-name>ViewSensor</servlet-name>
+		<url-pattern>
+		/ViewSensor</url-pattern>
+	  </servlet-mapping>
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>userstable</display-name>
+  	<servlet-name>userstable</servlet-name>
+  	<servlet-class>Servlet.userstable</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>userstable</servlet-name>
+  	<url-pattern>
+  	/userstable</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <description>
+  	</description>
+  	<display-name>UsersTable</display-name>
+  	<servlet-name>UsersTable</servlet-name>
+  	<servlet-class>database.UsersTable</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>UsersTable</servlet-name>
+  	<url-pattern>
+  	/UsersTable</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Admindata</display-name>
+  	<servlet-name>Admindata</servlet-name>
+  	<servlet-class>Servlet.Admindata</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Admindata</servlet-name>
+  	<url-pattern>
+  	/Admindata</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>hubDetails</display-name>
+  	<servlet-name>hubDetails</servlet-name>
+  	<servlet-class>Servlet.hubDetails</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>hubDetails</servlet-name>
+  	<url-pattern>
+  	/hubDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>userCPuUtilization</display-name>
+  	<servlet-name>userCPuUtilization</servlet-name>
+  	<servlet-class>Servlet.userCPuUtilization</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>userCPuUtilization</servlet-name>
+  	<url-pattern>
+  	/userCPuUtilization</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Billing</display-name>
+  	<servlet-name>Billing</servlet-name>
+  	<servlet-class>Servlet.Billing</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Billing</servlet-name>
+  	<url-pattern>/Billing</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Billings</display-name>
+  	<servlet-name>Billings</servlet-name>
+  	<servlet-class>Servlet.Billings</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>StartStop</display-name>
+  	<servlet-name>StartStop</servlet-name>
+  	<servlet-class>Servlet.StartStop</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StartStop</servlet-name>
+  	<url-pattern>
+  	/StartStop</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>LogOut</display-name>
+  	<servlet-name>LogOut</servlet-name>
+  	<servlet-class>Servlet.LogOut</servlet-class>
+  	<enabled>true</enabled>
+  	<async-supported>false</async-supported>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Billings</servlet-name>
+  	<url-pattern>
+  	/Billings</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>LogOut</servlet-name>
+  	<url-pattern>
+  	/Logout</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
